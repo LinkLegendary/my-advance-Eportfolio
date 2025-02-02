@@ -837,14 +837,7 @@ background-color:rgb(245, 245, 245) ;
       font-size: 16px;
     }
    
-    html,body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-     }
-
+    
 
 }
 
@@ -856,7 +849,7 @@ background-color:rgb(245, 245, 245) ;
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x: hidden;
+        overflow-x:;
      }
 
 
@@ -874,16 +867,13 @@ background-color:rgb(245, 245, 245) ;
 
 @media (max-width: 360px){
 
-section {
-   overscroll-behavior-block: 1;
-}
 
 html,body {
    width: 100%;
    height: 100%;
    margin: 0;
    padding: 0;
-   overflow-x: hidden;
+   overflow-x:;
 
 
 
