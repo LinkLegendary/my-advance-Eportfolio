@@ -9,8 +9,19 @@
 
 }
 
+
+
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+
+
+
 #landing-page {
-    min-height: 100vh;
+    min-height:130vh ;
 }
 nav {
     display: flex;
@@ -19,6 +30,13 @@ nav {
     padding: 0 20px;
     height: 100px;
     margin-bottom: 50px;
+}
+
+
+section {
+    background-color: rgb(245, 245, 245);
+    transition: all 300ms ease;
+
 }
 
 ul {
@@ -45,16 +63,18 @@ a {
     font-weight: 700;
 }
 
-#personal-logo {
-
+.personal-logo {
+    
     width: 40px;
     height: 40px;
+    
 
 }
 
 .header-title {
     font-size: 120px;
     margin-top: px;
+    padding-top: px;
 }
 
 .header-para {
@@ -67,6 +87,7 @@ a {
 
 .header-content {
     width: 60%;
+    padding-bottom: px;
     
 }
 
@@ -81,11 +102,7 @@ a {
 
 
 
-header {
-    margin: 0 30px;
- 
 
-}
 
 .social-link {
     background-color: #f06449;
@@ -130,22 +147,29 @@ header {
 }
 
 .mail-btn {
-  
+   
     width: 60px;
     height: 60px;
     font-size: 30px;
     padding: 12px;
-    
+    position: fixed ;  
     background-color: black;
     color:white;
     border-radius: 50%;
     border: 1px solid gray;
     bottom: 32px;
     right: 80px;
-    position: fixed;
+   
     cursor: pointer;
     z-index: 100;
+    transition: all 300ms ease;
+
 } 
+
+
+.mail-btn:hover {
+    scale: 1.8;
+}
 
 .fa-envelope {
     display: flex;
@@ -156,7 +180,7 @@ header {
 .scroll {
     position: absolute;
     left: 50%;
-    bottom: 32px;
+    bottom: -60px;
     border-radius: 50%;
     
     
@@ -206,6 +230,26 @@ project
 */
 
 
+
+.project__description--link{
+
+    color: white;
+}
+
+c
+
+
+.section-title {
+
+    margin-top: 30px;
+
+}
+
+
+#landing-page{
+
+    margin-bottom: -30px;
+}
 .project-img {
 
     width: 100%;
@@ -235,9 +279,7 @@ project
     text-align: center;
 }
 
-.row {
-    margin: 0 20px;
-}
+
 
 
 
@@ -443,13 +485,282 @@ footer {
 
 
 }
+
+
+
+
+.js-dark-theme .landing-page {
+    background-color: black;
+}
+.js-dark-theme .personal-logo{
+    filter: invert(1);
+}
    
+ .js-dark-theme .header-title,
+ .js-dark-theme .header-para {
+
+    color: white;
+}
+
+ .js-dark-theme section {
+    background-color: black;
+ }
+
+.js-dark-theme .fa-solid{
+    color: white;
+}
+.js-dark-theme .scroll-icon {
+  background-color: white;
+    color: white;
+}
+.js-dark-theme .scroll {
+    background-color: white;
+    color: white;
+}
+.js-dark-theme .link-hover-effect:after {
+    color: white;
+}
+.js-dark-theme .scroll-icon {
+    color: white;
+}
+.js-dark-theme .scroll-icon::after {
+    color: white;
+}
+.js-dark-theme .section-title {
+    color: white;
+}
+
+.js-dark-theme .link-hover-effect {
+    color: white;
+}
+
+.js-dark-theme .link-hover-effect-black:after {
+    background-color: white;
+}
+
+.js-dark-theme .link-hover-effect-white:after {
+    color: white;
+}
+
+
+/*
+
+MODAL
+
+
+*/
+
+
+.header {
+    position:absolute ;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+    visibility: ;
+  }
+
+
+
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
-@media(max-width: 900px){
+    padding: px;
+    width: 90%;
+    max-width: 1100px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    visibility:;
+    opacity: 1;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    z-index: 5;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+  }
 
-
+.modal-title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    margin-top: 60px
 
 }
+
+.modal-subtitle{
+    font-size: 12px;
+    font-weight:700; 
+    margin-bottom: 24px;
+    padding-left: 23px;
+}
+
+.modal-about-para{
+    padding-left: 23px;
+    line-height: 1.8;
+}
+
+.modal-title{
+    padding-left: 23px;
+    color: white;
+}
+
+.modal-language-img {
+    width: 100%;
+    filter: invert(0);
+    transition: all 300ms ease;
+}
+
+.modal-language-img:hover {
+
+    transform: scale(1.1);
+}
+
+.modal-language-lists{
+    margin-top: 24px;
+    display: flex;
+     padding-right: 50px;
+    flex-wrap: wrap;
+   
+}
+
+.modal-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    
+
+}
+
+.modal-language-list{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    transition: all 300ms;
+}
+
+.modal-language-list:hover .language-name{
+    opacity: 1;
+}
+
+.language-name:hover{
+
+    opacity: 1;
+}
+
+.language-name {
+     position: absolute;
+    text-align: center;
+    opacity: 0;
+    bottom: -19px;
+    font-size: 12px;
+    transition: all 500ms ease;
+}
+
+
+
+.modal-about{
+background-color:rgb(245, 245, 245) ;
+    width: 50%;
+  
+    height: 80vh;
+    
+}
+
+.modal-contact{
+    width: 50%;
+   height: 80vh;
+   background-color: black;
+    
+}
+
+.modal-half{
+    padding: 40px 72px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 23px;
+}
+
+.form-item-label{
+    margin-bottom: 30px;
+}
+
+.input{
+    margin-bottom: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    border-bottom: 3px solid white;
+}
+
+.input2 {
+    height: 150px;
+    border-bottom: 3px solid white;
+}
+
+.form-summit{
+    margin-top: 22px;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    margin-left: 23px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 900;
+    color: white;
+    border: 2px solid #f06449;;
+    background-color: #f06449;
+    transition: all 300ms ease;
+
+}
+
+.form-summit:active{
+    background-color:#442379;
+    color: #f06449;
+    border: 2px solid #f06449;
+}
+
+
+.modal-subtitle,
+.form-item-label {
+    color: white;
+}
+
+
+.form-summit:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.modal-title2,
+.modal-subtitle2 {
+    color: black;
+}
+
+
+
+
+
+
+
+    
+
 
 @media (max-width: 900px) {
     .header-title {
@@ -458,6 +769,55 @@ footer {
     .header-para {
       font-size: 20px;
     }
+
+    .modal{
+        flex-direction: column-reverse;
+        border-width: ;
+        padding: 0;
+        height: 140vh;
+        opacity: 1;
+        top: 700px;
+        border-radius: 0;
+  
+
+    }
+
+    .form-summit{
+
+        margin-bottom: 40px;
+    }
+
+    .input{
+
+        margin-right: 50px;
+    }
+
+
+    .input2{
+
+        height: 200px;
+    }
+
+
+
+    .modal-about, .modal-contact{
+        padding: 0;
+    }
+    .modal-half {
+        width: 100%;
+        padding-left: 40px;
+    }
+
+    .model-contact{
+       
+    }
+
+
+
+
+
+
+
 }
 
 @media (max-width: 550px) {

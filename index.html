@@ -18,11 +18,11 @@
 
 <body>
 
-    <section id="landing-page">
+    <section id="landing-page" class="landing-page">
 
         <nav>
             <figure>
-                <img id="personal-logo" src="./assets/favicon.ico" alt="">
+                <img class="personal-logo" src="./assets/favicon.ico" alt="">
             </figure>
             <ul>
                 <li class="nav-link"><a href="
@@ -40,14 +40,12 @@
                     
                     ">Projects</a></li>
 
-                <li class="nav-link"><a href=""
-                    
-                    class="
+                <li class="nav-link"><a href="" class="
                     link-hover-effect
                     link-hover-effect-black
                     ">Contact</a></li>
 
-                <li><i class="fa-solid fa-circle-half-stroke"></i></li>
+                <li onclick="toggleContrast()"><i class="fa-solid fa-circle-half-stroke"></i></li>
 
 
             </ul>
@@ -59,21 +57,21 @@
             <div class="header-content">
                 <h1 class="header-title ">Hey</h1>
                 <h1 class="header-title orange">I'm David kim.</h2>
-                <p class=" header-para">I'm a <b class="orange">Frontend Software Engineer</b> with a
-                    <br>
-                    strong passion for building web
-                    <br>applications with great user experiences.
-                    <br> Here's a bit more <b class="orange">about me.</b>
+                    <p class=" header-para">I'm a <b class="orange">Frontend Software Engineer</b> with a
+                        <br>
+                        strong passion for building web
+                        <br>applications with great user experiences.
+                        <br> Here's a bit more <b class="orange">about me.</b>
 
-                </p>
+                    </p>
 
-                <div class="social-link-box">
-                    <a href="" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="" class="social-link"><i class="fas fa-file-pdf"></i></a>
+                    <div class="social-link-box">
+                        <a href="" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="" class="social-link"><i class="fas fa-file-pdf"></i></a>
 
 
-                </div>
+                    </div>
 
 
 
@@ -81,13 +79,7 @@
 
             </div>
 
-            <a href="" class="mail-btn-anchor">
 
-                <button class="mail-btn">
-
-                    <i class="fa-regular fa-envelope"></i>
-                </button>
-            </a>
 
             <a href="" class="scroll">
                 <div class="scroll-icon">
@@ -98,11 +90,162 @@
 
             </div>
 
-
-
-
-
         </header>
+
+        <a href="" class="mail-btn-anchor">
+
+            <button class="mail-btn">
+
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+        </a>
+
+        <div class="modal">
+            <div class="modal-half modal-about">
+                <h2 class="modal-title modal-title2">Here's a bit about me.</h2>
+                <h3 class="modal-subtitle modal-subtitle2"><b>Frontend Software Engineer.</b></h3>
+                <p class="modal-about-para">I'm a 21 year-old Australian <b class="orange">frontend <br>software
+                        engineer</b> with experience
+                    <br>developing websites for top-tech <br>companies like <b class="orange">Google</b> and <b
+                        class="orange">Canva.</b>
+                    <br>I currently solve extremely difficultbr engineering problems every day with <b class="orange">
+                        React</b>,
+                    <br><b class="orange">typeScript</b> and <b class="orange">MobX</b> in Canva's Video team.
+                </p>
+
+                <div class="modal-language-lists">
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img class="modal-language-img" src="./assets/E-Portfolio s.jpeg"  alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img src="./assets/E-Portfolio s.jpeg" class="modal-language-img" alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img src="./assets/E-Portfolio s.jpeg" class="modal-language-img" alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img src="./assets/E-Portfolio s.jpeg" class="modal-language-img" alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img src="./assets/E-Portfolio s.jpeg" class="modal-language-img" alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img src="./assets/E-Portfolio s.jpeg" class="modal-language-img" alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img src="./assets/E-Portfolio s.jpeg" class="modal-language-img" alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+                    <div class="modal-language-list">
+                        <figure class="modal-language">
+                            <img src="./assets/E-Portfolio s.jpeg" class="modal-language-img" alt="">
+                        </figure>
+                        <span class="language-name">HTML</span>
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="modal-half modal-contact ">
+                <h2 class="modal-title">Let's have a chat!</h2>
+                <h3 class="modal-subtitle">I'm currently open to new opportunities.</h3>
+                <form id="contact-form">
+                    <div class="form-item">
+                        <label class="form-item-label">Name</label>
+                        <input class="input" name="user-name" type="text" required></input>
+
+                    </div>
+
+                    <div class="form-item">
+                        <label class="form-item-label">Email</label>
+                        <input class="input" name="user-email" type="text" required></input>
+
+                    </div>
+
+                    <div class="form-item">
+                        <label class="form-item-label">Message</label>
+                        <textarea class="input input2"  name="message" type="text" required></textarea>
+
+                    </div>
+
+                    <button id="contack-summit" class="form-summit">
+                        Send it my way
+
+                    </button>
+
+
+
+
+
+
+
+
+
+                </form>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
 
 
     </section>
