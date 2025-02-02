@@ -849,7 +849,8 @@ background-color:rgb(245, 245, 245) ;
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x:;
+        overflow-x:clip;
+        
      }
 
 
@@ -873,11 +874,20 @@ html,body {
    height: 100%;
    margin: 0;
    padding: 0;
-   overflow-x:;
+   
+   
 
 
 
 }
+
+
+section {
+
+    overflow-y: scroll;
+}
+
+
 
 
 }
