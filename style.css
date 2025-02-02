@@ -11,6 +11,12 @@
 
 
 
+
+
+.html {
+    scroll-behavior: smooth;
+  
+}
 .row {
     width: 100%;
     max-width: 1100px;
@@ -18,7 +24,10 @@
     padding: 0 12px;
   }
 
-
+  .container {
+    padding: 50px 0;
+    width: 100%;
+  }
 
 #landing-page {
     min-height:130vh ;
@@ -579,7 +588,7 @@ MODAL
     overflow: hidden;
     display: flex;
     visibility:;
-    opacity: 1;
+    opacity: 0;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     z-index: 5;
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
@@ -775,7 +784,7 @@ background-color:rgb(245, 245, 245) ;
         border-width: ;
         padding: 0;
         height: 140vh;
-        opacity: 1;
+        opacity: 0;
         top: 700px;
         border-radius: 0;
   
@@ -820,11 +829,65 @@ background-color:rgb(245, 245, 245) ;
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
     .header-title {
       font-size: 60px;
     }
     .header-para {
       font-size: 16px;
     }
+   
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+     }
+
+
+}
+
+
+@media (max-width: 550px){
+
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+     }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 360px){
+
+section {
+   overscroll-behavior-block: 1;
+}
+
+html,body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+
+
+
+}
+
+
 }
