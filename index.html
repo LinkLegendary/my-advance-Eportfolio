@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/667845f007.js" crossorigin="anonymous"></script>
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "P4MVRvKo4mr7jtMFC",
+            });
+        })();
+    </script>
 
 
 
@@ -40,10 +47,10 @@
                     
                     ">Projects</a></li>
 
-                <li class="nav-link"><a href="" class="
+                <li class="nav-link" onclick="toggleModal()"><a href="#" class="
                     link-hover-effect
                     link-hover-effect-black
-                    ">Contact</a></li>
+                    " >Contact</a></li>
 
                 <li onclick="toggleContrast()"><i class="fa-solid fa-circle-half-stroke"></i></li>
 
@@ -61,7 +68,7 @@
                         <br>
                         strong passion for building web
                         <br>applications with great user experiences.
-                        <br> Here's a bit more <b class="orange">about me.</b>
+                        <br> Here's a bit more <b class="orange click" onclick="toggleModal()" >about me.</b>
 
                     </p>
 
@@ -92,16 +99,16 @@
 
         </header>
 
-        <a href="" class="mail-btn-anchor">
+        <a href="#" class="mail-btn-anchor">
 
-            <button class="mail-btn">
-
-                <i class="fa-regular fa-envelope"></i>
+            <button class="mail-btn" onclick="toggleModal()">
+            <i class="fa-regular fa-envelope"></i>
             </button>
         </a>
 
         <div class="modal">
             <div class="modal-half modal-about">
+
                 <h2 class="modal-title modal-title2">Here's a bit about me.</h2>
                 <h3 class="modal-subtitle modal-subtitle2"><b>Frontend Software Engineer.</b></h3>
                 <p class="modal-about-para">I'm a 21 year-old Australian <b class="orange">frontend <br>software
@@ -116,7 +123,7 @@
                 <div class="modal-language-lists">
                     <div class="modal-language-list">
                         <figure class="modal-language">
-                            <img class="modal-language-img" src="./assets/E-Portfolio s.jpeg"  alt="">
+                            <img class="modal-language-img" src="./assets/E-Portfolio s.jpeg" alt="">
                         </figure>
                         <span class="language-name">HTML</span>
                     </div>
@@ -191,54 +198,46 @@
 
 
             <div class="modal-half modal-contact ">
-                <h2 class="modal-title">Let's have a chat!</h2>
+                <i class="fa-solid fa-x modal-exit click" onclick="toggleModal()"></i>
+
+                <h2 class="modal-title">Let's have a chat! </h2>
                 <h3 class="modal-subtitle">I'm currently open to new opportunities.</h3>
-                <form id="contact-form">
+                <form id="contact-form" onsubmit="contact(event)">
                     <div class="form-item">
                         <label class="form-item-label">Name</label>
-                        <input class="input" name="user-name" type="text" required></input>
+                        <input class="input" name="user_name" type="text"> </input>
 
                     </div>
 
                     <div class="form-item">
                         <label class="form-item-label">Email</label>
-                        <input class="input" name="user-email" type="text" required></input>
+                        <input class="input" name="user_email" type="text"></input>
 
                     </div>
 
                     <div class="form-item">
                         <label class="form-item-label">Message</label>
-                        <textarea class="input input2"  name="message" type="text" required></textarea>
+                        <textarea class="input input2" name="message" type="text"></textarea>
 
                     </div>
 
-                    <button id="contack-summit" class="form-summit">
+                    <button id="contack-summit" class="form-summit" onclick="contact(event)">
                         Send it my way
-
                     </button>
-
-
-
-
-
-
-
 
 
                 </form>
 
+                <div class="modal-overlay modal-overlay-loading ">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
 
-
-
-
-
+                <div class="modal-overlay modal-overlay-success ">
+                    Thanks for the message! <br> Looking forward to speaking to you soon.
+                </div>
 
 
             </div>
-
-
-
-
 
 
 

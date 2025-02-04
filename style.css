@@ -15,23 +15,25 @@
 
 .html {
     scroll-behavior: smooth;
-  
+
 }
+
 .row {
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 12px;
-  }
+}
 
-  .container {
+.container {
     padding: 50px 0;
     width: 100%;
-  }
+}
 
 #landing-page {
-    min-height:130vh ;
+    min-height: 130vh;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -39,6 +41,7 @@ nav {
     padding: 0 20px;
     height: 100px;
     margin-bottom: 50px;
+
 }
 
 
@@ -73,10 +76,10 @@ a {
 }
 
 .personal-logo {
-    
+
     width: 40px;
     height: 40px;
-    
+
 
 }
 
@@ -97,7 +100,7 @@ a {
 .header-content {
     width: 60%;
     padding-bottom: px;
-    
+
 }
 
 .orange {
@@ -145,35 +148,30 @@ a {
 
 }
 
-.landing-page{
-   
-}
+.landing-page {}
 
 
-.mail-btn-anchor{
-
-
-}
+.mail-btn-anchor {}
 
 .mail-btn {
-   
+
     width: 60px;
     height: 60px;
     font-size: 30px;
     padding: 12px;
-    position: fixed ;  
+    position: fixed;
     background-color: black;
-    color:white;
+    color: white;
     border-radius: 50%;
     border: 1px solid gray;
     bottom: 32px;
     right: 80px;
-   
+
     cursor: pointer;
     z-index: 100;
     transition: all 300ms ease;
 
-} 
+}
 
 
 .mail-btn:hover {
@@ -191,8 +189,8 @@ a {
     left: 50%;
     bottom: -60px;
     border-radius: 50%;
-    
-    
+
+
 
 }
 
@@ -240,25 +238,23 @@ project
 
 
 
-.project__description--link{
+.project__description--link {
 
     color: white;
 }
 
-c
-
-
-.section-title {
+c .section-title {
 
     margin-top: 30px;
 
 }
 
 
-#landing-page{
+#landing-page {
 
     margin-bottom: -30px;
 }
+
 .project-img {
 
     width: 100%;
@@ -442,55 +438,55 @@ footer {
     opacity: 0;
     font-weight: 700;
     top: 95px;
-   display: flex;
-   color: white;
-  
+    display: flex;
+    color: white;
+
     transition: all 300ms;
 
-   
+
 
 }
 
 
-.footer-anchor:hover .footer-logo-popper{
+.footer-anchor:hover .footer-logo-popper {
     opacity: 1;
     transform: translateX(90px);
-    
+
 }
 
-.link-hover-effect{
+.link-hover-effect {
 
     position: relative;
-    
+
 }
 
-.link-hover-effect:after{
+.link-hover-effect:after {
     position: absolute;
     content: "";
-  
+
     color: rgb(7, 6, 6);
-    height:2px;
+    height: 2px;
     width: 0%;
     background-color: white;
     bottom: -2px;
     left: 0;
-    opacity:0;
+    opacity: 0;
     transition: all 300ms;
-    
 
-    
+
+
 }
 
-.link-hover-effect-black:after{
+.link-hover-effect-black:after {
     background-color: black;
 
 }
 
 
 
-.link-hover-effect:hover.link-hover-effect:after{
- opacity: 1;
- width: 100%;
+.link-hover-effect:hover.link-hover-effect:after {
+    opacity: 1;
+    width: 100%;
 
 
 }
@@ -501,40 +497,47 @@ footer {
 .js-dark-theme .landing-page {
     background-color: black;
 }
-.js-dark-theme .personal-logo{
+
+.js-dark-theme .personal-logo {
     filter: invert(1);
 }
-   
- .js-dark-theme .header-title,
- .js-dark-theme .header-para {
+
+.js-dark-theme .header-title,
+.js-dark-theme .header-para {
 
     color: white;
 }
 
- .js-dark-theme section {
+.js-dark-theme section {
     background-color: black;
- }
+}
 
-.js-dark-theme .fa-solid{
+.js-dark-theme .fa-solid {
     color: white;
 }
+
 .js-dark-theme .scroll-icon {
-  background-color: white;
+    background-color: white;
     color: white;
 }
+
 .js-dark-theme .scroll {
     background-color: white;
     color: white;
 }
+
 .js-dark-theme .link-hover-effect:after {
     color: white;
 }
+
 .js-dark-theme .scroll-icon {
     color: white;
 }
+
 .js-dark-theme .scroll-icon::after {
     color: white;
 }
+
 .js-dark-theme .section-title {
     color: white;
 }
@@ -561,25 +564,28 @@ MODAL
 
 
 .header {
-    position:absolute ;
+    position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 1000px;
     padding: 0 30px;
-    visibility: ;
-  }
+    opacity: 1;
+    transition: all;
+}
 
 
+.click {
+    cursor: pointer;
+}
 
-
-  .modal {
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     padding: px;
     width: 90%;
     max-width: 1100px;
@@ -587,33 +593,94 @@ MODAL
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    visibility:;
+    visibility: hidden;
+    opacity: 1;
+    z-index: -1;
+
+
+}
+
+
+
+
+
+.js-modal-open .modal-overlay-loading,
+.js-modal-open .modal-overlay-success,
+.js-modal-open .scroll,
+.js-modal-open nav,
+.js-modal-open .header {
     opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+
+
+
+
+
+.js-modal-open .modal {
+    z-index: 60;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
-    z-index: 5;
-    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
-  }
+    visibility: visible;
+}
+
+
+
+.js-modal-open .modal-about,
+.js-modal-open .modal-contact {
+    transform: translateX(0%);
+
+}
+
+
+
+
+.modal-about {
+    background-color: ;
+    width: 50%;
+    transform: translateX(-110%);
+    height: 80vh;
+    position: relative;
+}
+
+.modal-contact {
+    position: relative;
+    width: 50%;
+    padding: px px;
+    background-color: black;
+    transform: translateX(110%);
+    opacity: ;
+    ;
+}
+
+
+.modal-half {
+  padding: 0 20px;
+}
+
+
+
 
 .modal-title {
     margin-bottom: 20px;
     font-size: 26px;
     margin-top: 60px
-
 }
 
-.modal-subtitle{
+.modal-subtitle {
     font-size: 12px;
-    font-weight:700; 
+    font-weight: 700;
     margin-bottom: 24px;
     padding-left: 23px;
 }
 
-.modal-about-para{
+.modal-about-para {
     padding-left: 23px;
     line-height: 1.8;
 }
 
-.modal-title{
+.modal-title {
     padding-left: 23px;
     color: white;
 }
@@ -629,12 +696,12 @@ MODAL
     transform: scale(1.1);
 }
 
-.modal-language-lists{
+.modal-language-lists {
     margin-top: 24px;
     display: flex;
-     padding-right: 50px;
+    padding-right: 50px;
     flex-wrap: wrap;
-   
+
 }
 
 .modal-language {
@@ -644,11 +711,11 @@ MODAL
     margin: 0;
     padding: 0;
     width: 50%;
-    
+
 
 }
 
-.modal-language-list{
+.modal-language-list {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -660,17 +727,17 @@ MODAL
     transition: all 300ms;
 }
 
-.modal-language-list:hover .language-name{
+.modal-language-list:hover .language-name {
     opacity: 1;
 }
 
-.language-name:hover{
+.language-name:hover {
 
     opacity: 1;
 }
 
 .language-name {
-     position: absolute;
+    position: absolute;
     text-align: center;
     opacity: 0;
     bottom: -19px;
@@ -680,24 +747,26 @@ MODAL
 
 
 
-.modal-about{
-background-color:rgb(245, 245, 245) ;
-    width: 50%;
-  
-    height: 80vh;
-    
+
+
+
+
+
+
+.modal-half {
+    transition: all 300ms ease-in;
+
 }
 
-.modal-contact{
-    width: 50%;
-   height: 80vh;
-   background-color: black;
-    
-}
 
-.modal-half{
-    padding: 40px 72px;
-}
+
+
+
+
+
+
+
+
 
 .form-item {
     display: flex;
@@ -705,27 +774,51 @@ background-color:rgb(245, 245, 245) ;
     padding-left: 23px;
 }
 
-.form-item-label{
+.form-item-label {
     margin-bottom: 30px;
 }
 
-.input{
+.input {
     margin-bottom: 16px;
     border-top: none;
     border-left: none;
     border-right: none;
     background: none;
     border-bottom: 3px solid white;
+    outline: none;
+    color: white;
+    font-size: 16px;
+
 }
+
+input:hover,
+textarea:hover {
+    border-color: #dcdfe6;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #f06449;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
+
+
+
 
 .input2 {
     height: 150px;
     border-bottom: 3px solid white;
 }
 
-.form-summit{
+.form-summit {
     margin-top: 22px;
-    width: 200px;
+    width: 100%;
+    max-width: 240px;
     height: 60px;
     font-size: 18px;
     margin-left: 23px;
@@ -733,14 +826,17 @@ background-color:rgb(245, 245, 245) ;
     padding-bottom: 5px;
     font-weight: 900;
     color: white;
-    border: 2px solid #f06449;;
+    border: 2px solid #f06449;
     background-color: #f06449;
     transition: all 300ms ease;
 
 }
 
-.form-summit:active{
-    background-color:#442379;
+
+
+
+.form-summit:active {
+    background-color: white;
     color: #f06449;
     border: 2px solid #f06449;
 }
@@ -752,9 +848,10 @@ background-color:rgb(245, 245, 245) ;
 }
 
 
-.form-summit:hover{
+.form-summit:hover {
     background-color: transparent;
     border: 2px solid white;
+    cursor: pointer;
 }
 
 .modal-title2,
@@ -762,96 +859,270 @@ background-color:rgb(245, 245, 245) ;
     color: black;
 }
 
+.modal-overlay {
+    position: absolute;
+    z-index: -1;
+
+}
+
+.modal-overlay-loading {
+    background-color: #242424;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 300ms ease;
+
+
+}
+
+
+
+.js-modal-overlay-visible {
+
+    z-index: 1;
+}
+
+
+.fa-spinner {
+    animation: spinner 800ms infinite linear;
+
+}
+
+@keyframes spinner {
+
+    0% {
+        transform: rotate(0);
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+
+}
+
+.modal-overlay-success {
+
+    top: 0;
+    left: 0;
+    background-color: #4bb543;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    font-size: 40px;
+
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+
+
+
+
+}
+
+.modal-exit {
+
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+    color: white;
+    z-index: 100;
+}
+
+.click {
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.click:active {
+    transform: scale(0.7);
+}
 
 
 
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 900px) {
     .header-title {
-      font-size: 80px;
-    }
-    .header-para {
-      font-size: 20px;
+        font-size: 80px;
     }
 
-    .modal{
+    .header-para {
+        font-size: 20px;
+    }
+
+    .modal {
         flex-direction: column-reverse;
         border-width: ;
         padding: 0;
-        height: 140vh;
-        opacity: 0;
-        top: 700px;
+        height: 200vh;
+        opacity: 1;
+        top: 540px;
         border-radius: 0;
-  
+        margin-top: 0;
+
 
     }
 
-    .form-summit{
+    .form-summit {
 
         margin-bottom: 40px;
     }
 
-    .input{
+    .input {
 
         margin-right: 50px;
     }
 
 
-    .input2{
+    .input2 {
 
         height: 200px;
     }
 
 
 
-    .modal-about, .modal-contact{
-        padding: 0;
+    .modal-about
+     {
+     
+
     }
+
     .modal-half {
         width: 100%;
         padding-left: 40px;
     }
 
-    .model-contact{
-       
+    .model-contact {
+         padding-left: 30px;
+        height: 800px;
+        margin: 0;
+    }
+
+    .section-title {
+        font-size: 36px;
+        margin-top: 360px;
+
+    }
+
+    .modal-language-img {
+
+        width: 70%;
+    }
+
+    .project-wrapper {
+        margin-top: 50px;
+    }
+
+    .modal-half{
+
+        height: px;
+    }
+
+    .modal-language-lists{
+        margin-top: 100px;
+    }
+
+    .modal-language-list{
+
+        padding-right: 24px;
     }
 
 
 
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 560px) {
     .header-title {
-      font-size: 60px;
+        font-size: 60px;
     }
+
     .header-para {
-      font-size: 16px;
+        font-size: 16px;
     }
-   
-    
+
+    .modal-language-img {
+        width: 100%;
+    }
+
+    .modal-language-list{
+        padding-right: 0;
+    }
 
 }
 
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
 
-    html,body {
+    html,
+    body {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
-        overflow-x:clip;
-        
-     }
+        overflow-x: clip;
+
+    }
 
 
 
@@ -859,35 +1130,62 @@ background-color:rgb(245, 245, 245) ;
 
 }
 
+@media (max-width: 450px) {
+  .modal-language-lists {
+    padding-right: 0;
+    margin-top: 30px;
+  }
 
+}
 
+@media (max-width: 290px) {
 
+.modal-language-lists{
 
+    margin-top: 20px;
+    width: 20%;
+    display: none;
+}
 
-
-
-@media (max-width: 360px){
-
-
-html,body {
-   width: 100%;
-   height: 100%;
-   margin: 0;
-   padding: 0;
-   
-   
-
-
+.modal-about-para{
+    font-size: 13px;
+}
 
 }
 
 
-section {
 
-    overflow-y: scroll;
-}
+@media (max-width: 360px) {
 
 
+
+
+    section {
+
+        overflow-y: scroll;
+    }
+
+    .form-summit {}
+
+
+    .modal-half {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .modal-contact {
+        padding-left: 0;
+    }
+
+    .form-summit {
+        font-size: 16px;
+        max-width: 150px;
+    }
+
+    .modal-title {
+        margin-top: 50px;
+        font-size: 18px;
+    }
 
 
 }
