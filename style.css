@@ -1148,12 +1148,44 @@ footer {
         padding: 40px;
       }
 
+      .shape{
+        display: none;
+      }
+
+      .section-title{
+        font-size: 36px;
+      }
+
+      .modal-exit{
+        font-size: 16px;
+      }
 
 
 }
 
 
+@media(max-width: 360px){
 
+    .footer-social-link {
+        margin-bottom: 16px;
+        font-size: 12px;
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .footer-social-link-lists {
+        padding-left: 0px;
+        flex-direction: column;
+
+    }
+
+
+
+
+
+
+
+}
 
 
 
