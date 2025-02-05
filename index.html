@@ -25,14 +25,14 @@
 
 <body>
 
-    <section id="landing-page" class="landing-page">
+    <section id="landing-page" class="landing-page" onmousemove="moveBackground(event)">
 
         <nav>
             <figure>
                 <img class="personal-logo" src="./assets/favicon.ico" alt="">
             </figure>
             <ul>
-                <li class="nav-link"><a href="
+                <li class="nav-link nav-about" ><a href="
                    " class="
                  
                     link-hover-effect
@@ -205,13 +205,13 @@
                 <form id="contact-form" onsubmit="contact(event)">
                     <div class="form-item">
                         <label class="form-item-label">Name</label>
-                        <input class="input" name="user_name" type="text"> </input>
+                        <input class="input" name="user_name" type="text" required> </input>
 
                     </div>
 
                     <div class="form-item">
-                        <label class="form-item-label">Email</label>
-                        <input class="input" name="user_email" type="text"></input>
+                        <label class="form-item-label" >Email</label>
+                        <input class="input" name="user_email" type="text" required></input>
 
                     </div>
 
@@ -244,8 +244,15 @@
 
         </div>
 
-
-
+        <img src="./assets/semi circle.svg" class="shape shape-0">
+        <img src="./assets/squiggly.svg" class="shape shape-1">
+        <img src="./assets/squiggly.svg" class="shape shape-2">
+        <img src="./assets/semi circle.svg" class="shape shape-3">
+        <img src="./assets/triangle.svg" class="shape shape-4">
+        <img src="./assets/circle.svg" class="shape shape-5">
+        <img src="./assets/squiggly.svg" class="shape shape-6">
+        <img src="./assets/circle.svg" class="shape shape-7">
+        <img src="./assets/semi circle.svg" class="shape shape-8">
 
     </section>
 

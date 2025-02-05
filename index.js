@@ -14,6 +14,34 @@
 
 */
 
+ const scaleFactor = 1 / 20
+function moveBackground(event){
+   const shapes = document.querySelectorAll(".shape");
+      const x = event.clientX * scaleFactor;
+      const y = event.clientY * scaleFactor;
+      
+
+      for (let i = 0; i < shapes.length; ++i){
+         const isOdd = i % 2 !== 0;
+         const boolInt = isOdd ? -1 : 1;
+          shapes[i].style.transform = `translate(${x * boolInt}px ,${y * boolInt}px)`
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,17 +62,8 @@ function toggleContrast() {
 }
 
 
-
-
-
-
-
-
-
-
-
-function contact(event){
-    event.preventDefault();
+   function contact(event) {
+   // event.preventDefault();
 
     const loading  =  document.querySelector('.modal-overlay-loading')
     const success  =  document.querySelector('.modal-overlay-success')
@@ -58,31 +77,20 @@ function contact(event){
        'service_6vzscix',
        'template_rlm7kvs',
        event.target,
-
+      'P4MVRvKo4mr7jtMFC'
+        
     ).then(() => {
       loading.classList.remove('js-modal-overlay-visible');
       success.classList += ' js-modal-overlay-visible';
-   
-    }).catch(() => {
-      loading.classList.remove('js-modal-overlay-visible');
-      alert(
-         "The email service is temperaily unavailable. please contact me kkk@gmail.com"
-      )
-    })
-
-
-
-   
-    setTimeout(() => { 
-      loading.classList.remove('js-modal-overlay-visible');
-      success.classList += ' js-modal-overlay-visible';
-      
-      
-    },2000);
-
+    
+   })
+   .catch(() => {
+     loading.classList.remove("js-modal-overlay-visible");
+     alert(
+       "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+     );
+   });
 }
-
-
 
 
 

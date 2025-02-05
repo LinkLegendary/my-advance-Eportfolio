@@ -10,8 +10,30 @@
 }
 
 
+.modal-about:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color:rgb(236, 242, 231) ;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top:0
+    
+    
 
 
+    
+}
+
+
+
+
+
+.container{
+
+    position: relative;
+}
 
 .html {
     scroll-behavior: smooth;
@@ -596,7 +618,7 @@ MODAL
     visibility: hidden;
     opacity: 1;
     z-index: -1;
-
+   
 
 }
 
@@ -642,6 +664,7 @@ MODAL
     transform: translateX(-110%);
     height: 80vh;
     position: relative;
+   
 }
 
 .modal-contact {
@@ -878,6 +901,7 @@ textarea {
     align-items: center;
     color: white;
     transition: all 300ms ease;
+    
 
 
 }
@@ -952,6 +976,22 @@ textarea {
 }
 
 
+footer{
+    position: relative;
+}
+
+
+/*
+
+SHAPES
+
+*/
+
+.shape{
+
+    position: fixed;
+    z-index: ;
+}
 
 
 
@@ -962,13 +1002,62 @@ textarea {
 
 
 
+.shape-0{
+    top: 85vh;
+    left: 70vw;
+    
+}
+ 
 
+.shape-1{
+    top: 15vh;
+    left: 45vw;
+}
+ 
+.shape-4{
+    top: 15vh;
+    left: 70vw;
+}
+ 
 
+.shape-2{
+    top: 60vh;
+    left: 5vw;
+}
 
+.shape-3{
+    top: 55vh;
+    left: 75vw;
+}
+ 
+.shape-5{
+    top: 55vh;
+    left: 60vw;
+}
 
+.shape-6{
+    top: 85vh;
+    left: 5vw;
+}
 
+.shape-7{
+    top: 85vh;
+    left: 50vw;
+}
+ 
+.shape-8{
+    top: 15vh;
+    left: 5vw;
+}
+ 
 
+footer {
+    height: fit-content;
+}
 
+.container {
+    
+}
 
 
 
@@ -993,11 +1082,16 @@ textarea {
         padding: 0;
         height: 200vh;
         opacity: 1;
-        top: 540px;
+        top: 520px;
         border-radius: 0;
         margin-top: 0;
 
 
+    }
+
+    .modal-exit{
+        font-size:20px ;
+        top: 35px;
     }
 
     .form-summit {
@@ -1064,7 +1158,9 @@ textarea {
         padding-right: 24px;
     }
 
-
+   footer {
+    position: relative;
+   }
 
 }
 
@@ -1124,9 +1220,18 @@ textarea {
 
     }
 
+    /* .nav-about{
+        display: none;
+    } */
 
+li:first-child{
 
+    display: none;
+}
 
+.footer-social-link{
+    margin: 0 10px;
+}
 
 }
 
@@ -1158,7 +1263,27 @@ textarea {
 @media (max-width: 360px) {
 
 
+     .modal-exit{
+        top: 50px;
+        font-size: 12px;
+     }
 
+
+    .footer-social-link-lists{
+        padding-left: 0px;
+        flex-direction: column;
+
+    }
+    .footer-row{
+        padding-left: 0;
+    }
+
+    .footer-social-link{
+        margin-bottom: 16px;
+        font-size: 12px;
+        width: 50%;
+        flex-direction: column;
+    }
 
     section {
 
