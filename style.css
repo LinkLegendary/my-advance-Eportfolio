@@ -392,8 +392,9 @@ c .section-title {
     transform: translateY(0%);
 }
 
-
-
+.fs-edit-link{
+    color: white;
+}
 
 footer {
     height: 40vh;
@@ -435,8 +436,7 @@ footer {
     align-items: center;
     text-align: justify;
     margin-bottom: 25px;
-    padding-left: 90px;
-
+    
 }
 
 .footer-anchor {
@@ -1159,7 +1159,10 @@ footer {
       .modal-exit{
         font-size: 16px;
       }
-
+      .footer-social-link{
+        font-size: 13px;
+        margin: 0 20px;
+      }
 
 }
 
