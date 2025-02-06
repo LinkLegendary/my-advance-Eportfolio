@@ -27,7 +27,7 @@
 
 .container {
 
-    position: relative;
+    position:relative
 }
 
 .html {
@@ -48,7 +48,7 @@
 }
 
 #landing-page {
-    min-height: 130vh;
+    min-height: 100vh;
 }
 
 nav {
@@ -201,15 +201,27 @@ a {
     align-items: center;
 }
 
-.scroll {
-    position: absolute;
+
+
+
+#landing-page{
+    
+}
+
+.scroll-move{
+    
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 700px;
     left: 50%;
-    bottom: -60px;
-    border-radius: 50%;
-
-
+    margin-top: 800px;
+    
 
 }
+
+
 
 .scroll-icon {
     width: 20px;
@@ -260,16 +272,16 @@ project
     color: white;
 }
 
-c .section-title {
+.section-title {
 
-    margin-top: 30px;
+    margin-top: 0px;
 
 }
 
 
 #landing-page {
 
-    margin-bottom: -30px;
+    margin-bottom: px;
 }
 
 .project-img {
@@ -1054,9 +1066,60 @@ footer {
 
 
 
+@media (max-width: 900px){
+
+
+
+
+
+.section-title{
+    margin-bottom: 300px;
+    margin-top: 500px;
+}
+
+
+
+  .header-title{
+    font-size: 80px;
+  }
+  #landing-page{
+    min-height: 100vh;
+   
+  }
+
+
+
+}
+ 
+
+
+
+
+
+
+
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
-    .title {
+
+     .header{
+       top: 50%;
+       height: 500px;
+
+     }
+    
+  
+     
+
+    
+
+     .section-title{
+        margin-bottom:160px;
+        font-size:32px;
+     }
+    .row{
+        margin-top: 0;
+    }
+    .header-title {
       font-size: 80px;
     }
     .header-para {
@@ -1079,9 +1142,7 @@ footer {
   .container {
     position: relative;
   }
-    .row{
-        margin-top: 200px;
-    }
+   
   
  .form-summit{
     margin-bottom: 45px;
@@ -1118,6 +1179,63 @@ footer {
 
 
   }
+
+
+  @media(max-width: 650px){
+  .header-title{
+
+    font-size: 60px;
+  }
+
+  .header-para{
+    font-size:16px ;
+  }
+
+  }
+
+.modal{
+
+    min-height: 600px;
+}
+
+
+  @media(max-width: 600px){
+
+   .section-title{
+    margin-top: 35px;
+
+
+   }
+
+ .container{
+
+    margin-top: 400px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 @media(max-width: 480px){
@@ -1164,7 +1282,30 @@ footer {
         margin: 0 20px;
       }
 
+     .scroll-holder{
+
+        margin-bottom: 100px;
+     }
+
+
+
+
+
 }
+
+
+@media(max-width: 400px){
+.section-title{
+
+    margin-bottom: 80px;
+}
+
+}
+
+
+
+
+
 
 
 @media(max-width: 360px){
@@ -1182,6 +1323,28 @@ footer {
 
     }
 
+    .header-title{
+        font-size: 40px;
+    }
+
+    .header-para{
+        font-size:14px ;
+    }
+
+    .nav-about{
+        display: none;
+    }
+
+    .modal-about{
+        max-height: 800px;
+    }
+    .projects-list{
+        margin-top: 500px;
+    }
+
+    .modal-about{
+        max-height: 800px;
+    }
 
 
 
@@ -1191,7 +1354,12 @@ footer {
 }
 
 
+@media(max-width: 250px){
 
+    .scroll-icon{
+        display: none;
+    }
+}
 
 
 
