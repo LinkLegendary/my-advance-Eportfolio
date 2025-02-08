@@ -63,7 +63,7 @@ function toggleContrast() {
 
 
    function contact(event) {
-   // event.preventDefault();
+    event.preventDefault();
 
     const loading  =  document.querySelector('.modal-overlay-loading')
     const success  =  document.querySelector('.modal-overlay-success')
@@ -87,7 +87,7 @@ function toggleContrast() {
    .catch(() => {
      loading.classList.remove("js-modal-overlay-visible");
      alert(
-       "The email service is temporarily unavailable. Please contact me directly on email@email.com"
+       "The email service is temporarily unavailable. Please contact me directly on mybizinfo4567@email.com"
      );
    });
 }
